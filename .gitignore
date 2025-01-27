@@ -33,3 +33,6 @@ requirements.txt
 
 # Requirements
 .metaflow/
+
+# macOS system files
+.DS_Store
