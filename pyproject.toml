@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "uwave"
+version = "0.1.0"
+description = ""
+authors = ["Yuri Chernushenko <y.chernushenko@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+metaflow = "^2.13.7"
+pyunpack = "^0.3"
+pandas = "^2.2.3"
+numpy = "^2.2.2"
+patool = "^3.1.0"
+types-requests = "^2.32.0.20241016"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+mypy = "^1.14.1"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

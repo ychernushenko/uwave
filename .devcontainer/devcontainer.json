@@ -1,0 +1,52 @@
+{
+    "name": "Python Dev Container",
+    "build": {
+        "dockerfile": "../Dockerfile_dev"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "ms-python.black-formatter",
+                "GitHub.vscode-github-actions",
+                "GitHub.vscode-github-authentication",
+                "GitHub.vscode-pull-request-github",
+                "Github.copilot",
+                "hashicorp.terraform",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "matangover.mypy"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/app/.venv/bin/python",
+                "python.terminal.activateEnvironment": true,
+                "editor.formatOnSave": true,
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter"
+                },
+                "[terraform]": {
+                    "editor.defaultFormatter": "hashicorp.terraform"
+                },
+                "python.linting.flake8Enabled": true,
+                "python.linting.enabled": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": true,
+                    "source.fixAll": true
+                },
+                "python.sortImports.args": [
+                    "--profile",
+                    "black"
+                ],
+                "mypy.runUsingActiveInterpreter": true,
+                "mypy.targets": [
+                    "."
+                ]
+            },
+            "mounts": [
+                "source=${env:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind",
+                "source=${env:HOME}/.git-credentials,target=/home/vscode/.git-credentials,type=bind"
+            ]
+        }
+    }
+}

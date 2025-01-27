@@ -1,0 +1,7 @@
+[MFLOG|0|2025-01-27T10:03:34.419920Z|runtime|683ac907-d617-468e-8de4-46d39345ec1b]Data already exists. Skipping download and extraction.
+[MFLOG|0|2025-01-27T10:03:37.210251Z|runtime|5f28a328-c5f9-4ff9-98a7-993dafadba60]      x-acc     y-acc  z-acc  gesture  repetition  item_id
+[MFLOG|0|2025-01-27T10:03:37.262745Z|runtime|6b2e9c2d-c19b-49b6-9ac6-aea9ccde404a]0 -0.461539 -0.615385   0.08        1         9.0        1
+[MFLOG|0|2025-01-27T10:03:37.262837Z|runtime|6545e5e8-f3a4-4c94-b668-95eb6c7f5ab6]1 -0.461539 -0.615385   0.08        1         9.0        1
+[MFLOG|0|2025-01-27T10:03:37.262867Z|runtime|713e0dac-6d2b-4d21-823e-714b4912f9dd]2 -0.461539 -0.615385   0.08        1         9.0        1
+[MFLOG|0|2025-01-27T10:03:37.262891Z|runtime|090018cc-81cb-468e-a1c0-7ff2f11def1a]3 -0.461539 -0.615385   0.08        1         9.0        1
+[MFLOG|0|2025-01-27T10:03:37.262915Z|runtime|a4c35ce9-8adb-45d3-8e6b-1a4b4cdd89c1]4 -0.461539 -0.615385   0.08        1         9.0        1
