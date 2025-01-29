@@ -9,16 +9,16 @@
 
 ## Send requests
 [httpie](https://httpie.io/) is used for these examples:
-`http GET http://127.0.0.1:5000/model\?role\=user`
-`http GET http://127.0.0.1:5000/model\?id\=MODEL_ID\&role\=user`
-`http DELETE http://127.0.0.1:5000/model\?id\=1738138235871323\&role\=admin`
+`http GET http://127.0.0.1:5000/model\?role\=user`  
+`http GET http://127.0.0.1:5000/model\?id\=MODEL_ID\&role\=user`  
+`http DELETE http://127.0.0.1:5000/model\?id\=1738138235871323\&role\=admin`  
 
-`http POST http://127.0.0.1:5000/predict\?role\=user < data/inference_example.json`
-`http POST http://127.0.0.1:5000/predict\?id\=MODEL_ID\&role\=user < data/inference_example.json`
+`http POST http://127.0.0.1:5000/predict\?role\=user < data/inference_example.json`  
+`http POST http://127.0.0.1:5000/predict\?id\=MODEL_ID\&role\=user < data/inference_example.json`  
 
-`http POST http://127.0.0.1:5000/train\?role\=user`
+`http POST http://127.0.0.1:5000/train\?role\=user`  
 
-`http POST http://127.0.0.1:5000/dataset\?role\=user < data/dataset_update_example.json`
+`http POST http://127.0.0.1:5000/dataset\?role\=user < data/dataset_update_example.json`  
 
 # Run tests
-`pytest ./tests/test_endpoints.py`
+`pytest ./tests/test_endpoints.py`  
