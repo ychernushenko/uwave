@@ -35,3 +35,6 @@ ENV METAFLOW_USER=metaflow_user
 
 # Activate the virtual environment
 RUN echo "source /app/.venv/bin/activate" >> ~/.bashrc
+
+# Specify the default command to run when the container starts
+CMD ["/bin/bash"]
