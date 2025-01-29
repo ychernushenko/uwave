@@ -1,14 +1,17 @@
-from metaflow import FlowSpec, step
+from metaflow import FlowSpec, Parameter, step
 
 
 class UwaveFlow(FlowSpec):
+    dataset_path = Parameter("dataset_path", help="Dataset local path", required=True)
 
     @step
     def start(self):
         import pandas as pd
 
+        print("Loading data from", self.dataset_path)
+
         # Load data
-        data = pd.read_parquet("data/gesture_data.parquet")
+        data = pd.read_parquet(self.dataset_path)
 
         self.X = data.drop(["gesture", "user"], axis=1)  # Features
         self.y = data["gesture"]  # Target
@@ -50,6 +53,11 @@ class UwaveFlow(FlowSpec):
         y_pred = self.model.predict(self.X_test)
         print(classification_report(self.y_test, y_pred))
         print(confusion_matrix(self.y_test, y_pred))
+
+        self.classification_report = classification_report(
+            self.y_test, y_pred, output_dict=True
+        )
+        self.confusion_matrix = confusion_matrix(self.y_test, y_pred).tolist()
 
         self.next(self.end)
 

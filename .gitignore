@@ -36,3 +36,6 @@ requirements.txt
 
 # macOS system files
 .DS_Store
+
+# updated datsets
+data/gesture_data_*

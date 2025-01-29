@@ -16,6 +16,7 @@ types-requests = "^2.32.0.20241016"
 scikit-learn = "^1.6.1"
 pyarrow = "^19.0.0"
 fastparquet = "^2024.11.0"
+fastapi = {extras = ["standard"], version = "^0.115.7"}
 
 
 [tool.poetry.group.dev.dependencies]
