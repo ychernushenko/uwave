@@ -39,3 +39,6 @@ requirements.txt
 
 # updated datsets
 data/gesture_data_*
+
+# notebooks
+.ipynb_checkpoints
