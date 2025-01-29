@@ -8,7 +8,7 @@
 `python ./src/server.py`
 
 ## Send requests
-[httpie](https://httpie.io/) is used for these examples:
+[httpie](https://httpie.io/) is used for these examples:  
 `http GET http://127.0.0.1:5000/model\?role\=user`  
 `http GET http://127.0.0.1:5000/model\?id\=MODEL_ID\&role\=user`  
 `http DELETE http://127.0.0.1:5000/model\?id\=1738138235871323\&role\=admin`  
